@@ -1,0 +1,39 @@
+#TRAIN_LIST: '/data/HDFill/data/places2/train.list'
+#VAL_LIST: '/data/HDFill/data/places2/val.list'
+#TEST_LIST: '/data/HDFill/data/places2/val.list'
+TRAIN_LIST: './data/examples/train.list'
+VAL_LIST: './data/examples/val.list'
+TEST_LIST: './data/examples/val.list'
+mask_template_dir: 'mask_templates/'
+MODEL_RESTORE: '' 
+LOG_DIR: model_HD_512
+RANDOM_CROP: True
+
+IMG_SHAPE: [512, 512, 3]
+BATCH_SIZE: 4
+BOTTLENECK_SIZE: 64
+MULTISCALE_ATTENTION: True
+ATTENTION_TYPE: SOFT # HARD, SOFT
+GEN_TYPE: UNET #ED, or UNET
+GEN_NC: 32
+DIS_NC: 64
+
+COARSE_CONV_TYPE: slice #depth-separate (ds), regular, slice, none
+REFINE_CONV_TYPE: ds #depth-separate (ds), regular, slice, none
+GAN_LOSS_ALPHA: 0.001 
+WGAN_GP_LAMBDA: 10
+COARSE_ALPHA: 1.2
+L1_LOSS_ALPHA: 1.2
+AE_LOSS_ALPHA: 1.2
+GAN_WITH_MASK: False
+
+
+GPU_ID: [0, 1] 
+TRAIN_SPE: 30000
+VAL_PSTEPS: 2000
+MAX_ITERS: 300000
+VIZ_MAX_OUT: 10
+VAL: True 
+N_THREADS: 4
+
+
