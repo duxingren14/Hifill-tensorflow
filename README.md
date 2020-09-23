@@ -1,5 +1,5 @@
 
- # tensorflow implementation of HiFill (CVPR 2020 Oral Paper)
+ # tensorflow reimplementation of HiFill (CVPR 2020 Oral Paper)
 
 <a href="https://arxiv.org/abs/2005.09704">Contextual Residual Aggregation for Ultra High-Resolution Image Inpainting</a>
 
